@@ -1,0 +1,23 @@
+@keyframes steps {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+// @keyframes scroll-slide {
+// 	from {
+// 		transform: translateX(0);
+// 	}
+// 	to {
+// 		transform: translateX(-100%);
+// 	}
+// }
