@@ -106,10 +106,23 @@ table {
 		background-color: $main-color;
 		transition: all 0.5s;
 		z-index: 999;
-		.logo-icon {
+
+		.logo-circle {
+			background-color: #fff;
+			border-radius: 50%;
 			margin-top: 4rem;
-			font-size: 3rem;
-			color: #fff;
+			width: 40px;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.logo-icon {
+				margin: 0;
+				padding: 0;
+				width: 30px;
+				height: 30px;
+				color: #1e3b70;
+			}
 		}
 
 		.desktop-nav {
@@ -288,7 +301,7 @@ table {
 }
 
 .aboutme-box-text {
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	padding: 2.4rem;
 
 	.aboutme-text {
@@ -524,8 +537,8 @@ table {
 			transition: all 0.3s;
 			opacity: 1;
 			visibility: visible;
+
 			.logo-icon {
-				margin-top: 4rem;
 				font-size: 3rem;
 				color: #fff;
 			}
@@ -556,6 +569,17 @@ table {
 				&__icon {
 					transform: translateX(200%);
 				}
+			}
+		}
+
+		.dektop-nav__icon {
+			pointer-events: all;
+			padding: 0.5rem;
+
+			&:hover {
+				background-color: #0c0c0c;
+				border-radius: 50%;
+				
 			}
 		}
 
@@ -609,7 +633,7 @@ table {
 	}
 
 	.gallery-tray {
-			width: calc(100vw - 7rem);
+		width: calc(100vw - 7rem);
 		.tray-img {
 			height: 400px;
 		}

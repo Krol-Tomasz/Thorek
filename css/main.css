@@ -138,10 +138,29 @@ table {
   z-index: 999;
 }
 
-.header .container-nav .logo-icon {
+.header .container-nav .logo-circle {
+  background-color: #fff;
+  border-radius: 50%;
   margin-top: 4rem;
-  font-size: 3rem;
-  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .container-nav .logo-circle .logo-icon {
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  color: #1e3b70;
 }
 
 .header .container-nav .desktop-nav__list {
@@ -337,7 +356,7 @@ table {
 }
 
 .aboutme-box-text {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding: 2.4rem;
 }
 
@@ -568,7 +587,6 @@ table {
     visibility: visible;
   }
   .header .container-nav .logo-icon {
-    margin-top: 4rem;
     font-size: 3rem;
     color: #fff;
   }
@@ -604,6 +622,14 @@ table {
   .header .container-nav .desktop-nav__icon {
     -webkit-transform: translateX(200%);
             transform: translateX(200%);
+  }
+  .header .dektop-nav__icon {
+    pointer-events: all;
+    padding: 0.5rem;
+  }
+  .header .dektop-nav__icon:hover {
+    background-color: #0c0c0c;
+    border-radius: 50%;
   }
   .header .btn-nav {
     position: absolute;
