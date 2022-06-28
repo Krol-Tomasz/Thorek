@@ -9,7 +9,6 @@ const handleNav = () => {
 	btnNav.classList.toggle('btn-rotate')
 	main.classList.toggle('slide-main')
 	document.body.classList.toggle('body-hidden')
-
 }
 
 button.onclick = () => {
@@ -27,3 +26,7 @@ navLinks.forEach(link => {
 })
 
 btnNav.addEventListener('click', handleNav)
+
+btnNav.addEventListener('click', function () {
+	dataLayer.push({ event: 'openNav', EventCategory: 'Navigation', EventAction: 'Menu', EventLabel: 'QuickCheck' })
+})
