@@ -28,6 +28,8 @@
 	}
 }
 
+/* Scrollbar */
+
 ::-webkit-scrollbar {
 	width: 10px;
 }
@@ -42,6 +44,7 @@
 	border-radius: 50px;
 }
 
+/* Reset */
 
 *,
 *::after,
